@@ -130,3 +130,129 @@ span {
     font-size: 50px;
     font-weight: bolder;
 }
+
+
+/* footer */
+
+footer {
+    background-image: url(../Images/footer.png);
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-position: center;
+    color: var(--white);
+    margin-top: 110px;
+}
+
+.footer__top {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 50px 50px;
+}
+
+.footer__top h1 {
+    font-size: 40px;
+    font-family: var(--nav-font);
+}
+
+.container__footer__bottom {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.icone-chane {
+    height: 42px;
+    width: 34px;
+    object-fit: contain;
+}
+
+.footer__top__left {
+    display: flex;
+    flex-direction: column;
+}
+
+.logo-footer {
+    margin-bottom: 30px;
+}
+
+.icone-footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.footer__top__middle__left nav {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+}
+
+.footer__top__middle__left nav a {
+    text-decoration: none;
+    color: var(--white);
+    cursor: pointer;
+    font-family: var(--nav-font);
+    margin-bottom: 19px;
+}
+
+.footer__top__middle__rigth {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+
+.footer__top__middle__rigth p {
+    margin-left: -2px;
+    font-family: var(--nav-font);
+    line-height: 40px;
+}
+
+.footer__top__middle__rigth address {
+    margin-top: 40px;
+    margin-bottom: 30px;
+    font-family: var(--nav-font);
+}
+
+.footer__top__right {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+
+.footer__top__right p {
+    font-family: var(--nav-font);
+    margin-left: -4px;
+    margin-bottom: 50px;
+}
+
+.footer__top__right h1 {
+    margin-bottom: 35px;
+}
+
+.email-footer {
+    display: flex;
+}
+
+.email-footer input {
+    padding: 15px 25px;
+    border-radius: 10px 0px 0px 10px;
+    box-shadow: 0px 5px 16px rgba(248, 247, 247, 0.3);
+}
+
+.email-footer button {
+    padding: 15px 25px;
+    border-radius: 0px 10px 10px 0px;
+    background-color: var(--title-color);
+    color: var(--white);
+    font-family: var(--nav-font);
+    border: none;
+    cursor: pointer;
+}
+
+.footer__bottom {
+    background-color: var(--title-color);
+    padding: 30px 40px;
+    font-family: var(--nav-font);
+}
