@@ -110,3 +110,23 @@ span {
     cursor: pointer;
     margin-left: 20px;
 }
+
+/* contenaire -------------------------------------------------------------------------------------------------- */
+.container{
+    margin-top: 0;
+}
+/* baniére */
+.baniere{
+    background: url("Images/baniere1.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.textban{
+    padding-top: 100px;
+    width: 700px;
+    padding-left: 100px;
+}
+.textban h1{
+    font-size: 50px;
+    font-weight: bolder;
+}
