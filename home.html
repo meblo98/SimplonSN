@@ -10,47 +10,231 @@
 <body>
     <!-- nav bar -->
     <header>
-        <img src="Images/logo1.png" alt="logo de simplon" class="logo">
-        <div class="header__middle">
-            <nav class="appBar__nav">
-                <a href="#" class="nav__item">Accueil</a>
-                <a href="#" class="nav__item">Fabrique</a>
-                <a href="#" class="nav__item">Formations</a>
-                <a href="#" class="nav__item">Partenariats</a>
-                <a href="#" class="nav__item">Espaces</a>
-                <a href="#" class="nav__item">Entites</a>
-                <i class="fas fa-search"></i>
+        <div class="logo">
+        <img src="Images/logo.png" alt="logo" class="img_header">
+        </div>
+        <div>
+            <nav>
+                <a href="#">Accueil</a>
+                <a href="#">Fabrique</a>
+                <a href="#">Formations</a>
+                <a href="#">Partenariats</a>
+                <a href="#">Espaces</a>
+                <a href="#">Entité</a>
             </nav>
         </div>
         <div class="header__end">
-
-            <div><span>Fr</span>
-                <i class="fas fa-caret-down"></i>
-
-            </div>
-            <button class="login-button">
-                <a href="#">Contact</a>
-            </button>
+        <select>
+            <option value="">FR</option>
+            <option value="">ENG</option>
+            <option value="">SN</option>
+        </select>
+        <button class="login-button">Contact</button>
         </div>
     </header>
 
     <!-- main -->
-    <main class="container">
-        <!-- baniére -->
-        <div class="baniere">
-            <div class="textban">
-                <h1>Simplon,<br> réseau de Fabriques <br>
-                    numériques et inclusives
-                </h1>
+    
+        <section class="section__1">
+            <div class="elem-section-1">
+            <h1>
+                Simplon <br> réseau de Fabriques <br> numérique et inclusives
+            </h1>
+            <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. <br> Autem repudiandae assumenda voluptate eaque corrupti nesc
+            </p>
+            <button>Nous contacter</button>
+        </div>
+        </section>
+        <section class="section__2">
+            <img src="Images/img-section2.png" alt="img" class="img-section2">
+            <div class="text-section2">
+                <h1>SIMPLON AU SENEGAL</h1>
                 <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    Suspendisse varius enim in eros elementum tristique.
+                    Lorem ipsum dolor sit amet consectetur <br> adipisicing elit. Dicta saepe sint <br>similique sunt eaque provident assumenda sit <br> minima, doloremque unde suscipit voluptate <br> doloribus eum alias nisi voluptas soluta. Tempore, similique.
+                    Lorem ipsum dolor sit amet consectetur <br> adipisicing elit. Dicta saepe sint <br>similique sunt eaque provident assumenda sit <br> minima, voluptate <br> doloribus eum alias nisi voluptas soluta. Tempore, similique.
+                    Lorem ipsum dolor sit amet consectetur <br> adipisicing elit. Dicta saepe sint 
                 </p>
             </div>
+        </section>
+        <section class="nouvelle" id="nouvelle">
+            <div class="container">
+                <h2>Nos Nouvelles</h2>
+                <div class="row">
+                    <span class="actu">Actualités</span>
+                    <div class="peda-plier">
+                        <div class="box-plier">
+                            <div class="numb">
+                                <div class="date">
+                                    <span>30</span>
+                                    <p class="">Sep</p>
+                                </div>
+                                <img src="Images/N1.png" alt="phpto">
+                            </div>
+                            <h3>Jour de rentrée pour les 30
+                                apprenant.es de la 4ème promo</h3>
+                            <p class="desc">En vérité, le chemin importe peu, la
+                                volonté d'arriver suffit à tout".
+                                Et HOPPP, c'est parti...
+                            </p>
+                        </div>
+                        <div class="box-plier">
+                            <div class="numb">
+                                <div class="date">
+                                    <span>30</span>
+                                    <p class="">Sep</p>
+                                </div>
+                                <img src="Images/N2.png" alt="phpto">
+                            </div>
+                            <h3>Jour de rentrée pour les 30
+                                apprenant.es de la 4ème promo</h3>
+                            <p class="desc">En vérité, le chemin importe peu, la
+                                volonté d'arriver suffit à tout".
+                                Et HOPPP, c'est parti...
+                            </p>
+                        </div>
+                        <div class="box-plier">
+                            <div class="numb">
+                                <div class="date">
+                                    <span>30</span>
+                                    <p class="">Sep</p>
+                                </div>
+                                <img src="Images/N3.png" alt="phpto">
+                            </div>
+                            <h3>Jour de rentrée pour les 30
+                                apprenant.es de la 4ème promo</h3>
+                            <p class="desc">En vérité, le chemin importe peu, la
+                                volonté d'arriver suffit à tout".
+                                Et HOPPP, c'est parti...
+                            </p>
+                        </div>
+                        <div class="box-plier">
+                            <div class="numb">
+                                <div class="date">
+                                    <span>30</span>
+                                    <p class="">Sep</p>
+                                </div>
+                                <img src="Images/N4.png" alt="phpto">
+                            </div>
+                            <h3>Jour de rentrée pour les 30
+                                apprenant.es de la 4ème promo</h3>
+                            <p class="desc">En vérité, le chemin importe peu, la
+                                volonté d'arriver suffit à tout".
+                                Et HOPPP, c'est parti...
+                            </p>
+                        </div>
+                    </div>
+                    <h2 class="plus">Plus d’actualites <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="10px" width="30" height="30" viewBox="0,0,256,256">
+                        <g fill="#880f0f" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><g transform="scale(5.12,5.12)"><path d="M25,2c-12.683,0 -23,10.317 -23,23c0,12.683 10.317,23 23,23c12.683,0 23,-10.317 23,-23c0,-12.683 -10.317,-23 -23,-23zM37,26h-11v11h-2v-11h-11v-2h11v-11h2v11h11z"></path></g></g>
+                        </svg></h2>
+                </div>
+            </div>
+          
+        </section>  
+        <section class="section__4">           
+            <h1 class="title-section4">Evenement a venir</h1>
+            <div class="card-section4">
+            <div class="card-s4">
+                <div class="div-left">
+                    <h1>23</h1>
+                    <p>SEP</p>
+                </div>
+                <div class="div-middle">
+                    <div class="title-div">
+                        <h2>NEXT EVENTS</h2>
+                        <div class="trait"></div>
+                    </div>
+                    <p>
+                        Lancement d'une nouvelle <br> cohorte de developpement web
+                    </p>
+                </div>
+                <div class="div-right">
+                    <img src="Images/fleche.png" alt="">
+                </div>
+            </div>
+            <div class="card-s4">
+                <div class="div-left">
+                    <h1>25</h1>
+                    <p>SEP</p>
+                </div>
+                <div class="div-middle">
+                    <div class="title-div">
+                        <h2>NEXT EVENTS</h2>
+                        <div class="trait"></div>
+                    </div>
+                    <p>
+                        Hackathon <br> cohorte de developpement web
+                    </p>
+                </div>
+                <div class="div-right">
+                    <img src="Images/fleche.png" alt="">
+                </div>
+            </div>
         </div>
-
-
-    </main>
+        </section>
+        <section class="section__9">
+            <h1 class="title-section9">Nous Contactez</h1>
+            <div class="general">
+            <div class="block__right">
+                <form action="" id="formulary">
+                    <div class="type-text">
+                        <input type="text" placeholder="Prenom*">
+                        <input type="text" placeholder="Nom*">
+                    </div>
+        
+                    <div class="personnal-info">
+                        <input type="tel" placeholder="Tel*">
+                        <input type="email" placeholder="Mail*">
+                    </div>
+                    <div class="bas-form">
+                        <textarea name="Message" id="" cols="30" rows="10" placeholder="Message*"></textarea>
+                        <div class="policy">
+                            <input type="checkbox">
+                            <h2>I agree to terme of policy</h2>
+                        </div>
+                        <div class="footer-form">
+                            <button class="button-form">Envoyer</button>
+                            <h3 class="field">*These fields are required</h3>
+                        </div>
+                       
+                    </div>
+                </form>
+            </div>
+            <div class="block__left">
+                <div class="card">
+                    <img src="Images/localisation.png" alt="" class="img-form">
+                    <div>
+                        <h1>Adresse</h1>
+                        <p>
+                            Cite keur Goor-Gui <br>
+                            Dakar,Sicap,Liberte 2 <br>
+                            Senegal
+                        </p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="Images/tel.png" alt="" class="img-form">
+                    <div>
+                        <h1>Telephone</h1>
+                        <p>
+                            (221) 76 456 76 33 <br>
+                            (221) 76 457 87 89
+                        </p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="Images/message.png" alt="" class="img-form">
+                    <div>
+                        <h1>E-mail</h1>
+                        <p>
+                            Simplon@gmail.com <br>
+                            help@simplon.com
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </section>
  <!--FOOTER-->
 
  <footer>
