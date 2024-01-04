@@ -732,6 +732,29 @@ padding-top: 50px; */
     bottom: 0;
 
   }
+
+  /* petit histoire -----------------*/
+  .pthisto{
+    margin-top: 50px;
+    padding-left: 50px;
+  }
+  .pthisto h1{
+        font-size: 50px;
+        color: #CE0033;
+        padding-bottom: 20px;
+  }
+  .pthisto hr{
+    width: 200px;
+    height: 5px;
+    background: #000000;
+  }
+.cardhisto{
+    display: flex;
+    flex-direction: column;
+}
+.imgleg img{
+    width: 20%;
+}
 /*section--------------------------------------------------------------9*/
 .title-section9 {
     text-align: center;
