@@ -15,6 +15,9 @@
     margin: 0;
     padding: 0;
 }
+body{
+    overflow-x: hidden;
+}
 /* hedear */
 header {
     display: flex;
@@ -110,6 +113,14 @@ span {
     cursor: pointer;
     margin-left: 20px;
 }
+.menu_burger{
+    display: none;
+    background: #000000;
+    width: 30px;
+}
+/*.mobille{
+
+}*/
 /* .container{
 
 } */
@@ -119,7 +130,34 @@ span {
     background-image: url(../Images/baniere1.png);
     background-size: contain;
     background-repeat: no-repeat;
+    opacity: 0.9;
 
+}
+.tex_h1{
+    display: block;
+    position: relative;
+    top: -65px;
+    left: 530px;
+    height: 10px;
+    z-index: 3;
+    margin-left: 25px;
+    color: aliceblue;
+    font-size: 75px;
+}
+.t_fab{
+    display: flex;
+    justify-content: center;
+    position: relative;
+    height: 112px;
+    padding-bottom: 100px !important;
+    margin-right: 200px;
+    padding-top: 190px !important;
+    text-align: center;
+    width: 20px;
+    background: rgba(25,35,58, 0.4);
+    top: 18px;
+    left: 540px;
+    z-index: 1;
 }
 .badiere h1{
     font-weight: bolder;
@@ -127,7 +165,7 @@ span {
     color: #FFFFFF;
     text-align: center;
     /* margin-left: 400px; */
-    padding-top: 200px;
+    padding-top: 250px;
     padding-bottom: 200px;
     background-image: url(../Images/2.png);
     width: 500px;
@@ -135,10 +173,14 @@ span {
 .fab{
     display: flex;
     background-color: #CE0033;
-    margin-left: 100px;
+    margin-top: 250px;
+    margin-left: 70px;
     margin-right: 100px;
     height: 400px;
     opacity: 0.9;
+}
+.fableft_right{
+    display: none;
 }
 .fableft h1, .fabright h1{
     color: white;
@@ -164,6 +206,9 @@ span {
     color: #FFFFFF;
     padding-left: 50px;
     line-break: auto;
+}
+.espace{
+    display: none;
 }
 /* petite histoire */
 
@@ -208,6 +253,7 @@ span {
     padding-left: 20px;
 }
 /* pedagogie */
+
 .container__section2 {
     display: flex;
     flex-direction: row;
@@ -231,7 +277,7 @@ span {
     font-family: var(--nav-font);
     font-weight: bold;
     font-size: 35px;
-    margin-left: 30px;
+  
 }
 
 .container__section2 {
@@ -259,6 +305,7 @@ span {
     padding-bottom: 50px;
 }
 /* pilier */
+
 .box-top {
     display: flex;
     flex-direction: row;
@@ -430,7 +477,9 @@ p {
 
 
 /* nos chiffres */
-
+.section__5{
+    width: 100%;
+}
 .chiffres__section5 {
     background-image: url(../Images/Group1.jpg);
     background-size: auto;
@@ -494,6 +543,7 @@ p {
     justify-content: space-around;
     align-items: center;
     padding-bottom: 100px;
+    margin-left: 0%;
 }
 
 .profiles {
@@ -505,6 +555,7 @@ p {
     justify-content: center;
     align-items: flex-start;
     border-radius: 10px;
+    margin-left: 5%;
 }
 
 .profiles h2 {
@@ -536,9 +587,40 @@ p {
 .img-profile {
     margin-left: 700px;
 }
-
-
-
+/*ici la fabrique*/
+.ici__la_fabrique .h1{
+    margin-left: 42%;
+    margin-top: 70px;
+    margin-bottom: 70px;
+    color: #CE0033;
+    font-size: 40px;
+} 
+.ici__la_fabrique .container_ici_la_fabrique{
+    display: flex;
+    justify-content: space-around;
+}
+.container_ici_la_fabrique p, h1{
+    margin-left: 200px;
+}
+.container_ici_la_fabrique img{
+    height: 200px;
+    width: 50%;
+    margin-top: 20px;
+    margin-left: 200px;
+}
+/*section voyager*/
+.voyager{
+    margin-top: 100px;
+    margin-left: 10%;
+}
+.voyager img{
+    width: 100%;
+    height: 400px;
+}
+.voyager .container_voyager{
+    display: flex;
+    justify-content: space-between;
+}
 /* footer */
 
 footer {
@@ -662,4 +744,429 @@ footer {
     background-color: var(--title-color);
     padding: 30px 40px;
     font-family: var(--nav-font);
+}
+/*responsive  pour tablette*/
+@media screen and (max-width: 1224px) and (min-width: 600px) {
+    /*responsive nav-bar*/
+    body{
+        overflow-x: hidden;
+    }
+    header{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+}
+header img{
+    display: none;
+}
+.nav__item{
+    font-size: 12px;
+    font-weight: bold;
+    margin-right: 0;
+    padding: 7px;
+    flex-wrap: nowrap;
+}
+.nav__item::after {
+    content: '';
+    /* Le contenu est vide, car nous créons une ligne */
+    position: absolute;
+    /* Position absolue pour le pseudo-élément */
+    left: 0;
+    /* Début de la ligne */
+    bottom: 0px;
+    /* Distance de la ligne par rapport au texte */
+    /* La ligne s'étend sur toute la largeur du lien */
+    /* Épaisseur de la ligne */
+    background-color: white;
+    /* Couleur de la ligne (vous pouvez la personnaliser) */
+    transform: scaleX(0);
+    /* Échelle horizontale initiale pour cacher la ligne */
+    transition: transform 0.3s;
+    /* Animation de l'échelle au survol */
+}
+.header__end span{
+    display: none;
+}
+.header__end {
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 0px;
+    padding: 0;
+}
+.login-button{
+    padding: 5px 5px;
+    color: var(--white);
+    font-size: 0.8rem;
+    border-radius: 1.1rem;
+    margin-right: 0px;
+    cursor: pointer;
+    font-family: var(--nav-font);
+    border: none;
+    background-color: var(--title-color);
+}
+/*responsive banniere */
+.badiere{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    background-image: url(../Images/baniere1.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    opacity: 0.9;
+    margin-left: -0%;
+}
+/*responsive banniere pour tablette */
+.badiere h1{
+    font-weight: bolder;
+    font-size: 50px;
+    color: #FFFFFF;
+    text-align: center;
+}
+.tex_h1{
+    display: none;
+}
+.t_fab{
+    display: none;
+}
+.fab{
+    display: flex;
+    flex-direction: row;
+    margin-left: -5%;
+    margin-right: 0px;
+    background: var(--title-color);
+    padding: 0;
+}
+.fableft h1, .fabright h1{
+    justify-content: center;
+    color: white;
+    padding-top: 15px;
+    padding-bottom: 10px;
+}
+.fabright h1{
+    margin-right: 5% !important;
+}
+.fab hr{
+    display: none;
+}
+.fableft p{
+    padding: 10px;
+}
+.fableft p, .fabright p{
+    width: 200px;
+    line-height: 2.2;
+    font-size: 15px;
+    font-weight: bold;
+    padding-top: 0;
+    color: #FFFFFF;
+    padding-left: 50px;
+    line-break: auto;
+}
+.espace{
+    display: flex;
+}
+/*responsive la section petite histoire*/
+.histoire h1{
+    margin: 30px auto;
+}
+.histo_cont{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+}
+/*responsive pedagogie*/
+.section__2 .img-profile{
+    display: none;
+}
+.section__2 div{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+.section__2  br{
+    display: none;
+}
+.section__2 .presentation__section2{
+    display: flex;
+    align-items: center;
+    margin-top: 25px;
+}
+.vectore4{
+   margin-left: 50%;
+}
+/*responsive pilier for tablette*/
+.section__3 .section__3__left{
+    display: flex;
+    flex-wrap: wrap;
+}
+.title-section3{
+    text-align: center;
+}
+.section__3 .middle{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 250px 250px;
+    padding-bottom: 100px;
+    margin-left: 12%;
+}
+.point-red{
+    display: none;
+}
+.image3{
+   display: none;
+}
+.profils__section5 {
+  display: flex;
+  flex-direction: column;
+}
+.img-profile{
+    display: none !important;
+}
+/*responsives nos nouvelle*/
+}
+/*responsive pour mobille partie nav-bar*/
+@media screen and (max-width: 600px) and (min-width: 320px) {
+   header{
+        display: flex;
+        flex-direction: column;
+}
+header img{
+    display: none;
+}
+.nav__item{
+    display: grid;
+    grid-template-rows: 3px 3px 3px 3px 3px 3px;
+    font-size: 12px;
+    font-weight: bold;
+    margin-right: 0;
+    padding: 12px;
+}
+.header__end{
+    display: grid;
+    grid-template-rows: 100px;
+    margin-top: -130px;
+    padding: 0;
+}
+.header__end span{
+    display: none;
+}
+.login-button{
+    padding: 5px 5px;
+    color: var(--white);
+    font-size: 0.5rem;
+    border-radius: 1rem;
+    margin-right: 0px;
+    cursor: pointer;
+    font-family: var(--nav-font);
+    border: none;
+    background-color: var(--title-color);
+    margin-left: -70%;
+}
+/*resposvive banniere mobille */
+body{
+    overflow-x: hidden;
+}
+.container div{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+.container p{
+    margin: 0  !important;
+    padding: 0 !important;
+}
+.badiere h1{
+    font-weight: bolder;
+    font-size: 10px;
+    color: #FFFFFF;
+    text-align: center;
+}
+.tex_h1{
+    display: none;
+}
+.t_fab{
+    display: none;
+}
+.container hr{
+    display: none;
+}
+.fab{
+    margin-top: 190px;
+    margin-left: 10px;
+    font-size: 10px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 600px;
+    width: 100%;
+    width: 480px;
+    padding: 0;
+    justify-content: flex-start;
+}
+.fableft, .fabright{
+    padding: 10px;
+    margin: 0;
+}
+.fableft h1, .fabright h1{
+    font-size: 14px;
+    font-weight: bold;
+}
+/*end style banniere*/
+.histoire h1{
+    margin: 30px auto;
+}
+.histo_cont{
+    overflow-x: scroll;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+}
+/*pedagogie mobille*/
+.section__2 .img-profile{
+    display: none;
+}
+.titre1{
+    text-align: center;
+    font-size: 34px;
+    text-transform: uppercase;
+    margin-left: 10%;
+}
+.section__2 div{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+.section__2  br{
+    display: none;
+}
+.section__2 .presentation__section2{
+    display: flex;
+    align-items: center;
+    margin-top: 25px;
+}
+.section__2 p{
+    text-align: center;
+    margin-left: 10px;
+}
+/*pillier_mobille_responsive*/
+.section__3 .section__3__left{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: -300px;
+}
+.vectore4{
+    display: none;
+}
+.title-section3{
+    text-align: center;
+}
+.section__3 .middle{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 200px;
+    gap: 5%;
+    margin-left: 10%;
+    margin-bottom: 15%;
+}
+.point-red{
+    display: none;
+}
+.image3{
+   display: none;
+}
+/*responsive valeur*/
+.section__4 .container__section4{
+display: flex;
+flex-wrap: wrap;
+margin-left: 3%;
+}
+.section__4 br{
+    display: none;
+}
+.title-section4{
+    padding: 0;
+    margin: 0;
+}
+.container__section4__texte{
+    margin-left: 30%;
+    margin-bottom: 25%;
+    align-items: center;
+}
+.btn-text{
+    margin-top: 50px;
+    margin-bottom: 10px;
+}
+.section__4 .container__section4_grid{
+    margin-top: -450px;
+    margin-left: 35%;
+}
+/*chiffre section5*/
+.chiffres__section5{
+    background: #FFFFFF;
+    margin-left: 50%;
+    margin-top: -80px;
+    color: #CE0033;
+}
+.title-section5{
+    text-align: center;
+    margin-left: 50px;
+}
+.chiffres{
+    display: flex;
+    margin-top: 30px;
+    align-items: center;
+    color: #000000;
+    background-color: #CE0033;
+    padding: 15px;
+}
+/*responsive section equipe*/
+.title-section6{
+    text-align: center !important;
+}
+.section__6.paragraph__section6{
+    text-align: center !important;
+}
+.section__6 br{
+    display: none;
+}
+.section__6 .profils__section5{
+    display: flex;
+    flex-direction: column;
+    margin-left: 50%;
+    margin-top: 100px;
+}
+.section__6  .img-profile{
+    display: none;
+}
+/*footer*/
+footer{
+    margin-left: 12%;
+}
+.footer__top{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    background: #CE0033;
+}
+.footer__top__left{
+    grid-column-start: 1;
+    grid-column-end: 5;
+}
+.footer__top__middle__left{
+    grid-column-start: 1;
+    grid-column-end: 5;
+}
+.footer__top__middle__rigth{
+    grid-column-start: 1;
+    grid-column-end: 5;    
+}
+.footer__top__right{
+    grid-column-start: 1;
+    grid-column-end: 5; 
+}
+.email-footer button{
+    background: #000000;
+}
 }
